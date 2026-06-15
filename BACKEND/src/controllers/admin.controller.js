@@ -24,7 +24,13 @@ const registerAdmin = async (req, res) => {
         role: "admin"
     }, process.env.JWT_SECRET)
 
-    res.cookie("token", token)
+    res.cookie("token", token, {
+  httpOnly: true,
+  secure: true,      
+  sameSite: "none",  
+  maxAge: 24 * 60 * 60 * 1000 
+});
+
 
     return res.status(201).json({
         message: "Admin Registered Successfully",
@@ -60,7 +66,12 @@ const loginAdmin = async (req, res) => {
         role: "admin"
     }, process.env.JWT_SECRET)
 
-    res.cookie("token", token)
+    res.cookie("token", token,{
+  httpOnly: true,
+  secure: true,      
+  sameSite: "none",  
+  maxAge: 24 * 60 * 60 * 1000 
+})
     return res.status(200).json({
         message: "Login Successful",
         admin: {
@@ -72,7 +83,12 @@ const loginAdmin = async (req, res) => {
 }
 
 const logoutAdmin = async (req, res) => {
-    res.clearCookie("token")
+    res.clearCookie("token",{
+  httpOnly: true,
+  secure: true,      
+  sameSite: "none",  
+  maxAge: 24 * 60 * 60 * 1000 
+})
     return res.status(200).json({
         message: "Admin Logged Out Successfully"
     })
