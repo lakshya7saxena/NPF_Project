@@ -38,7 +38,7 @@ const VolunteerRegister = () => {
             <nav className='flex md:text-2xl text-sm justify-between relative font-bold bg-[#0D9488] p-4 items-center'>
                 <img src={Logo} alt="Logo" className='md:w-16 md:h-16 w-8 h-8' />
                 <h1 className='text-white text-center font-extrabold md:text-4xl md:tracking-widest uppercase md:ml-36 '>Naye Pankh Foundation</h1>
-                <button onClick={handleClick} className='cursor-pointer rounded-2xl md:px-5 md:py-3active:scale-95 bg-white text-[#0D9488] '>Admin DashBoard</button>
+                <button onClick={handleClick} className='cursor-pointer rounded-2xl md:px-5 md:py-3 active:scale-95 bg-white text-[#0D9488] '>Admin DashBoard</button>
             </nav>
             {flag && (
                 <div className='absolute top-18 right-5 mt-2 w-48 bg-white border border-gray-700 rounded-xl shadow-xl z-50 py-1 overflow-hidden  duration-150 '>
