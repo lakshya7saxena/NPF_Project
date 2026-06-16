@@ -53,8 +53,8 @@ const VolunteerDisplay = (props) => {
         </div>
     }
     return (
-        <div className='w-full m-16'>
-            <div className='bg-[#1f2937] relative w-full  rounded-xl border border-gray-700/70 shadow-xl overflow-hidden'>
+        <div className='w-full md:m-16 p-3 mt-120'>
+            <div className='bg-[#1f2937] relative w-full  rounded-xl border border-gray-700/70 shadow-xl overflow-auto'>
 
                 <table className='w-full  border-collapse'>
                     <thead>
@@ -73,10 +73,10 @@ const VolunteerDisplay = (props) => {
 
                 </table>
             </div>
-            <nav className='text-2xl w-screen flex justify-between items-center text-[#ffccac] bg-[#0D9488] absolute top-0 p-4 left-0 font-bold'>
-                <img src={Logo} alt="Logo"  className='w-16 h-16 ' />
-                <h1 className='text-white font-extrabold text-4xl'>Volunteer Applications Dashboard</h1>
-                <button onClick={handleClick} className='bg-white cursor-pointer px-4 py-1 text-[#0D9488] capitalize rounded-md text-3xl'>{admin.username.slice(0, 1)}</button>
+            <nav className='md:text-2xl text-lg w-screen flex justify-between items-center text-[#ffccac] bg-[#0D9488] absolute top-0 p-4 left-0 font-bold'>
+                <img src={Logo} alt="Logo"  className='md:w-16 md:h-16 w-8 h-8' />
+                <h1 className='text-white text-center font-extrabold md:text-4xl'>Volunteer Applications Dashboard</h1>
+                <button onClick={handleClick} className='bg-white cursor-pointer md:px-4 py-1 px-2 text-[#0D9488] capitalize rounded-md md:text-3xl'>{admin.username.slice(0, 1)}</button>
             </nav>
             {flag && (
                 <div className='absolute top-16 right-2 mt-2 w-48 bg-[#0c0e28] border border-gray-700 rounded-xl shadow-xl z-50 py-1 overflow-hidden  duration-150 '>
