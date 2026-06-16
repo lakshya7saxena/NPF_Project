@@ -53,8 +53,8 @@ const VolunteerDisplay = (props) => {
         </div>
     }
     return (
-        <div className='w-full md:m-16 p-3 mt-120'>
-            <div className='bg-[#1f2937] relative w-full  rounded-xl border border-gray-700/70 shadow-xl overflow-auto'>
+        <div className='w-full h-screen p-3'>
+            <div className='bg-[#1f2937] relative w-full max-h-5/6 mt-26 rounded-xl border border-gray-700/70 shadow-xl overflow-auto'>
 
                 <table className='w-full  border-collapse'>
                     <thead>
