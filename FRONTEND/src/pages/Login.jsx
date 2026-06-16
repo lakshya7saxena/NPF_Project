@@ -17,7 +17,7 @@ const Login = () => {
         })
     }
     return (
-        <div className='h-6/10 flex flex-col justify-around py-5 w-1/4 rounded-2xl px-10  bg-[#2e2f33]'>
+        <div className='h-6/10 flex flex-col justify-around py-5 md:w-1/4 rounded-2xl px-10  bg-[#2e2f33]'>
             <h1 className='text-6xl font-extrabold text-center tracking-tight'>Log <span className='text-[#0D9488]'>In</span> </h1>
             <h1 className='text-xl text-center font-semibold '>Please Log in to continue</h1>
             <div>
